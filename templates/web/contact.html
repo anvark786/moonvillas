@@ -1,0 +1,84 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'images/background/5.jpg' %})">
+    	<div class="auto-container">
+        	<h1>Contact Us</h1>
+            <ul class="page-breadcrumb">
+            	<li><a href="index.html">Home</a></li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+    
+    <!--Contact Section / Style Two-->
+    <section class="contact-section style-two">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Info Column-->
+                <div class="info-column col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                	<div class="inner-column wow fadeInLeft">
+                    	<h2>Location Details</h2>
+                        <ul>
+                        	<li><span>Address</span>Moon Villas, 68 Maniyan code, Munderi,Kalpatta, Wayanad Dist. Kerala 673112</li>
+                            <li><span>Phone</span>+91 8845 252 727 <br>+91 8848255 322</li>
+                            <li><span>Email</span>sales@moonvillas.in</li>
+                            <li><span>Working Hour</span>Monday - Saturday <br> 9:00AM - 6:00PM</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Form Column-->
+                <div class="form-column col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<h2>Contact With Us</h2>
+                        <!--Contact Form-->
+                        <div class="contact-form">
+                            <form method="post" action="http://html.efforttech.com/html/sproperty/sendemail.php" id="contact-form">
+                                <div class="row clearfix">
+                                    <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                        <input type="text" name="name" value="" placeholder="Name" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                        <input type="email" name="email" value="" placeholder="Email" required>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                        <textarea name="message" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                        <button type="submit" class="theme-btn btn-style-one">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End Contact Form-->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Contact Section-->
+    
+    <!--Map Section-->
+    <section class="contact-map-section">
+        <!--Map Outer-->
+        <div class="map-outer">
+            <!--Map Canvas-->
+            <div class="map-canvas"
+                data-zoom="12"
+                data-lat="-37.817085"
+                data-lng="144.955631"
+                data-type="roadmap"
+                data-hue="#ffc400"
+                data-title="Envato"
+                data-icon-path="{% static 'images/icons/map-marker.png' %}"
+                data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
+            </div>
+        </div>
+    </section>
+    <!--End Map Section-->
+{% endblock content %}
