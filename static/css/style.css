@@ -3621,6 +3621,7 @@ img{
 ***/
 
 .convenience-section{
+	width: 100%;
 	position:relative;
 	z-index:9;
 	padding:115px 0px 0px;
@@ -7230,3 +7231,17 @@ img{
     font-size: 36px;
     font-weight: 600;
 }
+.tourist{
+	margin-top: 50px;
+}
+.tourist div.text{
+	font-size: 15px;
+}
+.tourist h2{
+	color: #2a2a2a;
+    font-size: 36px;
+    font-weight: 600;
+}
+/*.text-center .text{
+	text-align: justify;
+}*/

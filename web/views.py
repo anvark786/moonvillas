@@ -6,7 +6,7 @@ def index(request):
 		'title': "Home",
 		"home": "current",
 	}
-	return render(request,'web/index-3.html',context)
+	return render(request,'web/index.html',context)
 
 
 def about(request):
@@ -29,7 +29,7 @@ def gallery(request):
 		'title': "Gallery",
 		"gallery": "current",
 	}
-	return render(request,'web/gallery-grid.html',context)
+	return render(request,'web/gallery.html',context)
 
 
 

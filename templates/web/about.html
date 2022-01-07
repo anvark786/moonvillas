@@ -7,7 +7,7 @@
     	<div class="auto-container">
         	<h1>About Us</h1>
             <ul class="page-breadcrumb">
-            	<li><a href="index.html">Home</a></li>
+            	<li><a href="{% url 'web:index' %}">Home</a></li>
                 <li>About Us</li>
             </ul>
         </div>
@@ -44,17 +44,12 @@
             </div>
         </div>
         <div class="auto-container">
-            <div class="row clearfix">              
+            <div class="row clearfix">    
                 
-                 <!--Image Column-->
-                <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                    <div class="image">
-                        <img src="{% static 'images/moonvillas/3.jpg' %}" alt="" />
-                    </div>
-                </div>
+                
                 <!--Content Column-->
-                <div class="content-column col-md-6 col-sm-12 col-xs-12">
-                    <div class="inner-column">
+                <div class="content-column col-md-6 col-sm-12 col-xs-12 ">
+                    <div class="">
                         <h2>Our Vision</h2>
                         <div class="text">The vision of Moon Villas remains to
                         provide proper housing and vacation
@@ -64,147 +59,14 @@
                         at Ponnada, 4kms away from Kalpetta
                         town</div>                        
                     </div>
-                </div> 
-                              
+                </div>                               
                 
             </div>
         </div>
     </section>
-    <!--End Professional Section-->
+    <!--End Professional Section-->  
     
-    <!--About Section Three-->
-    <section class="about-section-three alternate">
-    	<div class="auto-container">
-        	<div class="row clearfix">
-            	
-                <!--Title Column-->
-                <div class="title-column col-md-6 col-sm-12 col-xs-12">
-                	<div class="inner-column">
-                    	<h2>Our Property Details</h2>
-                        <div class="text">Lorem ipsum dolor amet thundercats cornhole stumptown iceland microdosing you probably haven't heard of them dreamcatcher. Blue bottle edison bulb bitters gentrify kombucha, messenger bag pinterest. Viral marfa copper mug drinking vinegar.</div>
-                        <a href="about.html#" class="theme-btn btn-style-two"><span class="flaticon-arrows-1"></span>&nbsp; Brochure</a>
-                    </div>
-                </div>
-                
-                <!--Property Column-->
-                <div class="property-info-column col-md-6 col-sm-12 col-xs-12">
-                	<div class="inner-column wow fadeInRight">
-                    	<div class="clearfix">
-                        	
-                            <!--Property Info Two-->
-                            <div class="property-info-two col-md-4 col-sm-4 col-xs-12">
-                                <div class="inner">
-                                    <span class="icon flaticon-bed"></span>
-                                    <div class="title">Bedrooms</div>
-                                    <div class="total">05</div>
-                                </div>
-                            </div>
-                            
-                            <!--Property Info Two-->
-                            <div class="property-info-two col-md-4 col-sm-4 col-xs-12">
-                                <div class="inner">
-                                    <span class="icon flaticon-shower-1"></span>
-                                    <div class="title">Washrooms</div>
-                                    <div class="total">03</div>
-                                </div>
-                            </div>
-                            
-                            <!--Property Info Two-->
-                            <div class="property-info-two col-md-4 col-sm-4 col-xs-12">
-                                <div class="inner">
-                                    <span class="icon flaticon-tray"></span>
-                                    <div class="title">Kitchens</div>
-                                    <div class="total">02</div>
-                                </div>
-                            </div>
-                            
-                            <!--Property Info Two-->
-                            <div class="property-info-two col-md-4 col-sm-4 col-xs-12">
-                                <div class="inner">
-                                    <span class="icon flaticon-sofa"></span>
-                                    <div class="title">Drawingroom</div>
-                                    <div class="total">01</div>
-                                </div>
-                            </div>
-                            
-                            <!--Property Info Two-->
-                            <div class="property-info-two col-md-4 col-sm-4 col-xs-12">
-                                <div class="inner">
-                                    <span class="icon flaticon-stairs-1"></span>
-                                    <div class="title">Stairs</div>
-                                    <div class="total">02</div>
-                                </div>
-                            </div>
-                            
-                            <!--Property Info Two-->
-                            <div class="property-info-two col-md-4 col-sm-4 col-xs-12">
-                                <div class="inner">
-                                    <span class="icon flaticon-house-2"></span>
-                                    <div class="title">garage</div>
-                                    <div class="total">01</div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!--End About Section Three-->
-    
-    <!--Fun Facts Section-->
-    <div class="fact-counter-section" style="background-image:url({% static 'images/background/5.jpg' %})">
-        <div class="fact-counter">
-            <div class="auto-container">
-                <div class="row clearfix">
-                
-                    <!--Column-->
-                    <div class="column counter-column col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner">
-                        	<div class="count-outer count-box">
-                            	<span class="count-text" data-speed="2000" data-stop="45">0</span>
-                                <h4 class="counter-title">Apartment Sell</h4>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <!--Column-->
-                    <div class="column counter-column col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner">
-                        	<div class="count-outer count-box">
-                            	<span class="count-text" data-speed="2500" data-stop="90">0</span>%
-                                <h4 class="counter-title">Success Rate</h4>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <!--Column-->
-                    <div class="column counter-column col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner">
-                        	<div class="count-outer count-box">
-                            	<span class="count-text" data-speed="2000" data-stop="25">0</span>
-                                <h4 class="counter-title">Country Reached</h4>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <!--Column-->
-                    <div class="column counter-column col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner">
-                        	<div class="count-outer count-box">
-                            	<span class="count-text" data-speed="3500" data-stop="350">0</span>
-                                <h4 class="counter-title">Happy Clients</h4>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End Fun Facts Section-->
+   
     
     <!--Specialist Section-->
     <section class="specialist-section">
