@@ -833,7 +833,7 @@ img{
 	float:left;
 	left:0px;
 	z-index:10;
-	padding:30px 0px;
+	/*padding:30px 0px;*/
 }
 .logo.pull-left a{
 	width: 150px;
@@ -880,7 +880,7 @@ img{
 .main-header .nav-outer{
 	position:relative;
 	float:right;
-	padding-top: 20px;
+	
 }
 
 .main-header .header-upper{
@@ -3124,7 +3124,7 @@ img{
 	position:relative;
 	background-repeat:no-repeat;
 	background-size:cover;
-	background-color:#198348;
+	background-color:#2a2a2a;
 	background-position:center center;
 }
 
@@ -7219,10 +7219,6 @@ img{
 
 /*additional style here.*/
 
-.call-to-action-section #subscribe{
-	display: flex;
-	align-items: center;
-}
 .header{
 	margin-bottom: 10px;
 }
@@ -7242,6 +7238,20 @@ img{
     font-size: 36px;
     font-weight: 600;
 }
-/*.text-center .text{
-	text-align: justify;
-}*/
+.nav-align{
+	padding-top: 20px;
+}
+#subscribe .logo img{
+	width: 250px;
+	height: 150px;
+}
+#subscribe .text-column{
+	padding-top: 40px;
+}
+#subscribe .btn-column{
+	padding-top: 20px;
+}
+.main-footer .logo-widget .logo img{
+	height: 100px;
+    width: 200px;
+}

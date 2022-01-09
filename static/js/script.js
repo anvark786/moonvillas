@@ -593,6 +593,22 @@
 	$(window).on('load', function() {
 		handlePreloader();
 		enableMasonry();
-	});	
+		
+
+		});
+
+		
 
 })(window.jQuery);
+
+
+$(document).ready(function(){
+	$('#nav-2').click(function(){
+		console.log("clicked")
+		$('#BgImageOne').hide()
+	});
+	$('#nav-1').click(function(){
+		console.log("clicked")
+		$('#BgImageOne').show()
+	});
+});

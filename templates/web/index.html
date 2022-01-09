@@ -68,8 +68,8 @@
         <div class="main-box">
             <div class="outer-container clearfix">
                 <!--Logo Box-->
-                <div class="logo-box">
-                    <div class="logo"><a href="{% url 'web:index' %}"><img src="" alt=""></a></div>
+                <div class="top-logo logo-box">
+                    <div class="logo"><a href="{% url 'web:index' %}"><img src="{% static 'images/new-logo.png' %}" alt=""></a></div>
                 </div>
                 
                 <!--Nav Outer-->
@@ -144,7 +144,7 @@
                     </div>
                     
                     <!--Nav Outer-->
-                    <div class="nav-outer clearfix">
+                    <div class="nav-outer clearfix nav-align">
                         <!-- Main Menu -->
                         <nav class="main-menu">
                             <div class="navbar-header">
@@ -397,7 +397,7 @@
     <!--End Services Section-->
     
     <!--Convenience Section-->
-    <section class="convenience-section" style="background-image:url({% static 'images/moonvillas/2.jpg' %})">
+    <section class="convenience-section" style="background-image:url({% static 'images/moonvillas/9.jpg' %})">
     	<div class="auto-container">
         	<h2>Villas & Specs</h2>
             <div class="outer-container clearfix">
@@ -410,16 +410,16 @@
                         
                             <!--Tab Btns-->
                             <ul class="tab-btns tab-buttons clearfix">
-                                <li data-tab="#tab-details" class="tab-btn active-btn" onclick="document.getElementById('activeImage').src='{% static 'images/moonvillas/1.jpg' %}">2 BHK Villa</li>
-                                <li data-tab="#tab-interior" class="tab-btn" onclick="document.getElementById('activeImage').src='{% static 'images/moonvillas/2.jpg' %}">3 BHK Villa</li>
+                                <li data-tab="#tab-details" id="nav-1" class="nav-item tab-btn active-btn" >2 BHK Villa</li>
+                                <li data-tab="#tab-interior" id="nav-2" class="nav-item tab-btn" >3 BHK Villa</li>
                             </ul>
                             
                             <!--Tabs Container-->
                             <div class="tabs-content">
                                 
                                 <!--Tab / Active Tab-->
-                                <div class="tab active-tab" id="tab-details">
-                                    <div class="content">
+                                <div class="tab active-tab" id="tab-details"
+>                                    <div class="content">
                                         <h3>2 BHK Villa Details</h3>                                        
                                         <div class="row clearfix">
                                         	<ul class="list-style-three col-md-6 col-sm-6 col-xs-12">
@@ -474,10 +474,11 @@
         			<!--End Product Info Tabs-->
                 </div>
                 <!--Image Column-->
-                <div class="image-column" style="background-image:url({% static 'images/moonvillas/1.jpg' %})">
-                	<div class="image">
-                    	<img id="activeImage" src="{% static 'images/moonvillas/1.jpg' %}" alt="" />
-                    </div>
+                <div class="image-column" id="BgImageTwo" style="background-image:url({% static 'images/moonvillas/10.jpg' %})">
+                	
+                </div>
+                <div class="image-column" id="BgImageOne" style="background-image:url({% static 'images/moonvillas/11.jpg' %})">
+                    
                 </div>
             </div>
         </div>
@@ -544,15 +545,8 @@
         	<!--Image Column-->
             <div class="map-column">
             	<!--Map Canvas-->
-                <div class="map-canvas"
-                    data-zoom="12"
-                    data-lat="-37.817085"
-                    data-lng="144.955631"
-                    data-type="roadmap"
-                    data-hue="#ffc400"
-                    data-title="Envato"
-                    data-icon-path="{% static 'images/icons/map-marker.png' %}"
-                    data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
+                <div class="map-canvas">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9294.670815717558!2d76.0653296560079!3d11.62850335927538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba67344520898f9%3A0x92f73bfed6bfdb8!2sMunderi%2C%20Kalpetta%2C%20Kerala!5e0!3m2!1sen!2sin!4v1641715209947!5m2!1sen!2sin" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         	<!--Content Column-->
@@ -587,7 +581,7 @@
     <!--Call To Action Section-->
     <section class="call-to-action-section">
     	<div class="auto-container">
-        	<div id="subscribe"class="row clearfix" style="display:flex;align-items: center;">
+        	<div id="subscribe"class="row clearfix">
             	<!--Logo Column-->
                 <div class="logo-column col-md-3 col-sm-12 col-xs-12" >
                 	<div class="logo">
@@ -600,7 +594,7 @@
                 </div>
                 <!--Btn Column-->
                 <div class="btn-column col-md-3 col-sm-12 col-xs-12">
-                	<a href="contact.html" class="theme-btn btn-style-four">Contact Us</a>
+                	<a href="{% url 'web:contact' %}" class="theme-btn btn-style-four">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -623,7 +617,7 @@
                             <div class="footer-column col-md-7 col-sm-6 col-xs-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-                                    	<a href="{% url 'web:index' %}"><img src="{% static 'images/moon-logo.jpeg' %}" alt="" /></a>
+                                    	<a href="{% url 'web:index' %}"><img src="{% static 'images/new-logo.png' %}" alt="" /></a>
                                     </div>
                                     <div class="text">Nulla ac nunc eget ante consectetur lobortis a vel orci. Vivamus nibh est condimentum ac metus nec, gravida varius diam.</div>
                                     <!--Social Icon Two-->
@@ -766,10 +760,6 @@
 <script src="{% static 'js/jquery.timepicker.min.js' %}"></script>
 <script src="{% static 'js/jquery-ui.js' %}"></script>
 <script src="{% static 'js/script.js' %}"></script>
-<!--Google Map APi Key-->
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyBKS14AnP3HCIVlUpPKtGp7CbYuMtcXE2o"></script>
-<script src="{% static 'js/map-script.js' %}"></script>
-<!--End Google Map APi-->
 
 </body>
 </html>
