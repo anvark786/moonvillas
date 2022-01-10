@@ -90,7 +90,7 @@
                                 <li class="{{home}}"><a href="{% url 'web:index' %}">Home</a></li>
                                 <li class="{{about}}"><a href="{% url 'web:about' %}">About Us</a></li>                                   
                                
-                                <li class="{{features}}"><a href="{% url 'web:features' %}">Features</a></li>
+                                
                                 <li class="{{gallery}}"><a href="{% url 'web:gallery' %}">Gallery</a></li>
                                     
                               
@@ -159,10 +159,8 @@
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
                                     <li class="{{home}}"><a href="{% url 'web:index' %}">Home</a></li>
-                                    <li class="{{about}}"><a href="{% url 'web:about' %}">About Us</a></li>                                   
-                                   
-                                    <li class="{{features}}"><a href="{% url 'web:features' %}">Features</a></li>
-                                    <li class="dropdown {{gallery}}"><a href="{% url 'web:gallery' %}">Gallery</a></li>
+                                    <li class="{{about}}"><a href="{% url 'web:about' %}">About Us</a></li>     
+                                    <li class="{{gallery}}"><a href="{% url 'web:gallery' %}">Gallery</a></li>
                                         
                                   
                                     <li class="{{wayanad}}"><a href="{% url 'web:about_wayanad' %}">About Wayanad</a></li>
@@ -330,7 +328,7 @@
                         <!--Video Box-->
                         <div class="video-box wow fadeInRight">
                             <figure class="image">
-                                <img src="{% static 'images/moonvillas/2.jpg' %}" alt="">
+                                <img src="{% static 'images/moonvillas/24.jpeg' %}" alt="">
                             </figure>
                             <a href="#" class="lightbox-image overlay-box"><span class="flaticon-play-button-1"></span></a>
                         </div>
@@ -362,7 +360,7 @@
                 <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box wow fadeInUp">
                     	<div class="icon-box">
-                        	<span class="icon flaticon-paint-roller"></span>
+                        	<span class="icon flaticon-nature"></span>
                         </div>
                         <h3><a href="agents-single.html">Wildlife and Plantations</a></h3>
                         <div class="text">Lorem ipsum dolor amet taiyaki keytar small batch offal lettumami gastropub cliche.</div>
@@ -420,22 +418,21 @@
                                 <!--Tab / Active Tab-->
                                 <div class="tab active-tab" id="tab-details"
 >                                    <div class="content">
-                                        <h3>2 BHK Villa Details</h3>                                        
+                                        <h3>2 BHK Villa Details</h3> 
+                                        <h4 style="font-weight: bold;"">Ground Floor</h4>                                     
                                         <div class="row clearfix">
+
                                         	<ul class="list-style-three col-md-6 col-sm-6 col-xs-12">
                                             	<li>Sit Out</li>
                                                 <li>Living Area</li>
                                                 <li>Dining Area</li>
                                                 <li>Court Yard</li>
                                                 <li>M.Kitchen</li>
-                                                <li>Bedrooms : 02</li>
-                                                <li>Toilets : 02</li>
+                                                <li>2 Bedrooms</li>
+                                                <li>2 Toilets</li>
                                             </ul>
                                             <ul class="list-style-three col-md-6 col-sm-6 col-xs-12">
                                             	
-                                                <li>Parking Capacity : 01</li>                                                
-                                                <li>No of Kitchen : 01</li>
-                                                <li>No of Garden : 01</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -445,7 +442,8 @@
                                 <!--Tab-->
                                 <div class="tab" id="tab-interior">
                                     <div class="content">
-                                        <h3>3 BHK Villa Details</h3>                                        
+                                        <h3>3 BHK Villa Details</h3>
+                                        <h4 style="font-weight: bold;">Ground Floor</h4>                                        
                                         <div class="row clearfix">
                                         	<ul class="list-style-three col-md-6 col-sm-6 col-xs-12">
                                                 <li>Sit Out</li>
@@ -453,15 +451,16 @@
                                                 <li>Dining Area</li>
                                                 <li>Court Yard</li>
                                                 <li>M.Kitchen</li>
-                                                <li>Bedrooms : 02</li>
-                                                <li>Toilets : 02</li>
+                                                <li>2 Bedrooms</li>
+                                                <li>2 Toilets</li>
                                             </ul>
+                                            
                                             <ul class="list-style-three col-md-6 col-sm-6 col-xs-12">
-                                            	<li>Bedrooms : 01</li>
-                                                <li>Toilets : 01</li>
-                                                <li>Parking Capacity : 01</li>                                                
-                                                <li>No of Kitchen : 01</li>
-                                                <li>No of Garden : 01</li>
+                                                <h4 style="font-weight: bold;">First Floor</h4>
+                                                   <li>Bedroom</li>
+                                                <li>Toilet</li>                	
+                                                
+                                                
                                                 
                                             </ul>
                                         </div>
@@ -474,10 +473,10 @@
         			<!--End Product Info Tabs-->
                 </div>
                 <!--Image Column-->
-                <div class="image-column" id="BgImageTwo" style="background-image:url({% static 'images/moonvillas/10.jpg' %})">
+                <div class="image-column" id="BgImageTwo" style="background-image:url({% static 'images/moonvillas/26.jpeg' %})">
                 	
                 </div>
-                <div class="image-column" id="BgImageOne" style="background-image:url({% static 'images/moonvillas/11.jpg' %})">
+                <div class="image-column" id="BgImageOne" style="background-image:url({% static 'images/moonvillas/22.jpeg' %})">
                     
                 </div>
             </div>
@@ -514,8 +513,8 @@
                             <!--Tab / Active Tab-->
                             <div class="tab active-tab" id="first-floor">
                                 <div class="content">
-                                	<div class="image">
-                                        <img src="{% static 'images/plan-1.jpg' %}" alt="" />
+                                	<div class="image cover-image">
+                                        <img src="{% static 'images/villa2.jpg' %}" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -524,7 +523,7 @@
                             <div class="tab" id="second-floor">
                                 <div class="content">
                                 	<div class="image">
-                                        <img src="{% static 'images/plan-2.jpg' %}" alt="" />
+                                        <img src="{% static 'images/villa3.jpg' %}" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -602,117 +601,15 @@
     <!--End Call To Action Section-->
     
     <!--Main Footer-->
-    <footer class="main-footer">
-    	<div class="auto-container">
-        
-        	<!--Widgets Section-->
-            <div class="widgets-section">
-            	<div class="row clearfix">
-                	
-                    <!--big column-->
-                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                        <div class="row clearfix">
-                        
-                            <!--Footer Column-->
-                            <div class="footer-column col-md-7 col-sm-6 col-xs-12">
-                                <div class="footer-widget logo-widget">
-									<div class="logo">
-                                    	<a href="{% url 'web:index' %}"><img src="{% static 'images/new-logo.png' %}" alt="" /></a>
-                                    </div>
-                                    <div class="text">Nulla ac nunc eget ante consectetur lobortis a vel orci. Vivamus nibh est condimentum ac metus nec, gravida varius diam.</div>
-                                    <!--Social Icon Two-->
-                                    <ul class="social-icon-two">
-                                        <li><a href="index-3.html#"><span class="fa fa-facebook-f"></span></a></li>
-                                        <li><a href="index-3.html#"><span class="fa fa-twitter"></span></a></li>
-                                        <li><a href="index-3.html#"><span class="fa fa-skype"></span></a></li>
-                                        <li><a href="index-3.html#"><span class="fa fa-vimeo-square"></span></a></li>
-                                        <li><a href="index-3.html#"><span class="fa fa-linkedin"></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <!--Footer Column-->
-                            <div class="footer-column col-md-5 col-sm-6 col-xs-12">
-                                <div class="footer-widget links-widget">
-                                	<div class="footer-title">
-                                		<h2>Quick Links</h2>
-                                    </div>
-                                    <ul class="footer-lists">
-                                        <li><a href="index-3.html#">Service</a></li>
-                                        <li><a href="index-3.html#">Wishlist</a></li>
-                                        <li><a href="index-3.html#">FAQ</a></li>
-                                        <li><a href="index-3.html#">Advance Sarch</a></li>
-                                        <li><a href="index-3.html#">Site Map</a></li>
-                                        <li><a href="index-3.html#">Support</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <!--big column-->
-                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                        <div class="row clearfix">
-                        
-                            <!--Footer Column-->
-                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                                <div class="footer-widget tweet-widget">
-                                	<div class="footer-title">
-                                		<h2>Twitter Feed</h2>
-                                    </div>
-                                    <div class="twitter-widget">
-                                    	<div class="inner">
-                                        	<div class="icon"><span class="fa fa-twitter"></span></div>
-                                            <div class="text"><span>@Tanin_JIm</span> Nam ultricies enim ut ex maximus, eu pellentesque urna lacinia blandit urna. <a href="index-3.html#">http://www.twitterlink.com</a></div>
-                                        </div>
-                                    </div>
-                                    <div class="twitter-widget">
-                                    	<div class="inner">
-                                        	<div class="icon"><span class="fa fa-twitter"></span></div>
-                                            <div class="text"><span>@Tanin_JIm</span> Nam ultricies enim ut ex maximus, eu pellentesque urna lacinia blandit urna. <a href="index-3.html#">http://www.twitterlink.com</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!--Footer Column-->
-                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                                <div class="footer-widget gallery-widget">
-                                	<div class="footer-title">
-                                		<h2>Instagram</h2>
-                                    </div>
-                                    <div class="widget-content">
-                                    	<div class="images-outer clearfix">
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{% static 'images/moonvillas/1.jpg' %}" class="lightbox-image overlay-box" data-caption="" data-fancybox="images" title="Image Title Here" data-fancybox-group="footer-gallery"></a><img src="{% static 'images/moonvillas/1.jpg' %}" alt=""></figure>
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{% static 'images/moonvillas/2.jpg' %}" class="lightbox-image overlay-box" data-caption="" data-fancybox="images" title="Image Title Here" data-fancybox-group="footer-gallery"></a><img src="{% static 'images/moonvillas/2.jpg' %}" alt=""></figure>
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{% static 'images/moonvillas/3.jpg' %}" class="lightbox-image overlay-box" data-caption="" data-fancybox="images" title="Image Title Here" data-fancybox-group="footer-gallery"></a><img src="{% static 'images/moonvillas/3.jpg' %}" alt=""></figure>
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{% static 'images/moonvillas/4.jpg' %}" class="lightbox-image overlay-box" data-caption="" data-fancybox="images" title="Image Title Here" data-fancybox-group="footer-gallery"></a><img src="{% static 'images/moonvillas/4.jpg' %}" alt=""></figure>
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{% static 'images/moonvillas/5.jpg' %}" class="lightbox-image overlay-box" data-caption="" data-fancybox="images" title="Image Title Here" data-fancybox-group="footer-gallery"></a><img src="{% static 'images/moonvillas/5.jpg' %}" alt=""></figure>
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{% static 'images/moonvillas/6.jpg' %}" class="lightbox-image overlay-box" data-caption="" data-fancybox="images" title="Image Title Here" data-fancybox-group="footer-gallery"></a><img src="{% static 'images/moonvillas/6.jpg' %}" alt=""></figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-         </div>
+    <footer class="main-footer">   	
          
     	<!--Footer Bottom-->
         <div class="footer-bottom">
         	<div class="row clearfix">
-            	<div class="column col-md-6 col-sm-12 col-xs-12">
+                <div class="column">
+                    <a class="imgcover col-md-2" href="https://api.whatsapp.com/send?phone=918593981779"><img src="{% static 'images/whatsapp.png' %}" alt=""></a>
+                </div>
+            	<div class="column col-md-4 col-sm-12 col-xs-12">                    
                 	<div class="copyright">Designed by <a target="_blank" href="https://www.prospello.in/">Prospello</a> | Powered Prospello Global</div>
                 </div>
                 <div class="nav-column col-md-6 col-sm-12 col-xs-12">
@@ -761,5 +658,9 @@
 <script src="{% static 'js/jquery-ui.js' %}"></script>
 <script src="{% static 'js/script.js' %}"></script>
 
+<a  class="whats-app" href="https://api.whatsapp.com/send?phone=918593981779?text=I'm%20interested%20in%20your%20Moon%20Villas%20Project." target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+</a>
 </body>
 </html>
+

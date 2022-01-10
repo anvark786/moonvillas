@@ -16,13 +16,6 @@ def about(request):
 	}
 	return render(request,'web/about.html',context)
 
-def features(request):
-	context = {
-		'title': "Features",
-		"features": "current",
-	}
-	return render(request,'web/features.html',context)
-
 
 def gallery(request):
 	context = {
