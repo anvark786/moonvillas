@@ -40,166 +40,31 @@
                 </div>
                 
                 <div class="filter-list row clearfix">
+                    {% for gallery_data in all_gallery_images %}
                     
                     <!--Gallery Block Five-->
-                    <div class="gallery-block-five col-md-4 col-sm-6 col-xs-12 mix all basement">
+                    <div class="gallery-block-five col-md-4 col-sm-6 col-xs-12 mix all {% if gallery_data.category == 'bedroom' %}bedroom{% elif gallery_data.category == 'drawing' %}drawing{% elif gallery_data.category == 'living' %}living{% elif gallery_data.category == 'kitchen' %}kitchen{% elif gallery_data.category == 'garage' %}garage{% elif gallery_data.category == 'basement' %}basement{% endif %}">
                         <div class="inner-box">
                             <figure class="image-box">
-                                <img src="{% static 'images/moonvillas/26.jpeg' %}" alt="">
+                                <img src="{{gallery_data.image.url}}" alt="">
                                 <!--Overlay Box-->
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="content">
-                                            <a href="{% static 'images/moonvillas/25.jpeg' %}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
+                                            <a href="{{gallery_data.image.url}}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </div>
                     </div>
-                    
-                    <!--Gallery Block Five-->
-                    <div class="gallery-block-five col-md-4 col-sm-6 col-xs-12 mix all bedroom">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <img src="{% static 'images/moonvillas/24.jpeg' %}" alt="">
-                                <!--Overlay Box-->
-                                <div class="overlay-box">
-                                    <div class="overlay-inner">
-                                        <div class="content">
-                                            <a href="{% static 'images/moonvillas/23.jpeg' %}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <!--Gallery Block Five-->
-                    <div class="gallery-block-five col-md-4 col-sm-6 col-xs-12 mix all drawing basement">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <img src="{% static 'images/moonvillas/12.jpg' %}" alt="">
-                                <!--Overlay Box-->
-                                <div class="overlay-box">
-                                    <div class="overlay-inner">
-                                        <div class="content">
-                                            <a href="{% static 'images/moonvillas/11.jpg' %}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <!--Gallery Block Two-->
-                    <div class="gallery-block-five col-md-4 col-sm-6 col-xs-12 mix all bedroom living basement">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <img src="{% static 'images/moonvillas/10.jpg' %}" alt="">
-                                <!--Overlay Box-->
-                                <div class="overlay-box">
-                                    <div class="overlay-inner">
-                                        <div class="content">
-                                            <a href="{% static 'images/moonvillas/9.jpg' %}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <!--Gallery Block Two-->
-                    <div class="gallery-block-five col-md-4 col-sm-6 col-xs-12 mix all kitchen garage">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <img src="{% static 'images/moonvillas/8.jpg' %}" alt="">
-                                <!--Overlay Box-->
-                                <div class="overlay-box">
-                                    <div class="overlay-inner">
-                                        <div class="content">
-                                            <a href="{% static 'images/moonvillas/7.jpg' %}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <!--Gallery Block Two-->
-                    <div class="gallery-block-five col-md-4 col-sm-6 col-xs-12 mix all garage living ">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <img src="{% static 'images/moonvillas/6.jpg' %}" alt="">
-                                <!--Overlay Box-->
-                                <div class="overlay-box">
-                                    <div class="overlay-inner">
-                                        <div class="content">
-                                            <a href="{% static 'images/moonvillas/5.jpg' %}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <!--Gallery Block Two-->
-                    <div class="gallery-block-five col-md-4 col-sm-6 col-xs-12 mix all drawing kitchen">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <img src="{% static 'images/moonvillas/4.jpg' %}" alt="">
-                                <!--Overlay Box-->
-                                <div class="overlay-box">
-                                    <div class="overlay-inner">
-                                        <div class="content">
-                                            <a href="{% static 'images/moonvillas/3.jpg' %}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <!--Gallery Block Two-->
-                    <div class="gallery-block-five col-md-4 col-sm-6 col-xs-12 mix all living kitchen">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <img src="{% static 'images/moonvillas/10.jpg' %}" alt="">
-                                <!--Overlay Box-->
-                                <div class="overlay-box">
-                                    <div class="overlay-inner">
-                                        <div class="content">
-                                            <a href="{% static 'images/moonvillas/2.jpg' %}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <!--Gallery Block Two-->
-                    <div class="gallery-block-five col-md-4 col-sm-6 col-xs-12 mix all drawing kitchen">
-                        <div class="inner-box">
-                            <figure class="image-box">
-                                <img src="{% static 'images/moonvillas/1.jpg' %}" alt="">
-                                <!--Overlay Box-->
-                                <div class="overlay-box">
-                                    <div class="overlay-inner">
-                                        <div class="content">
-                                            <a href="{% static 'images/moonvillas/41.jpg' %}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                    
+                    {% endfor %}
                 </div>
             </div>
         
             <div class="btn-box text-center">
                 <div class="btn-box">
-                    <a href="blog-grid.html" class="theme-btn btn-style-two">Load More</a>
+                    <a href="#" class="theme-btn btn-style-two">Load More</a>
                 </div>
             </div>
             

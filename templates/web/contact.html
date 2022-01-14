@@ -37,16 +37,17 @@
                     	<h2>Contact With Us</h2>
                         <!--Contact Form-->
                         <div class="contact-form">
-                            <form method="post" action="http://html.efforttech.com/html/sproperty/sendemail.php" id="contact-form">
+                            <form method="post" action="" id="contact-form" class="ajax reload">
+                                {% csrf_token %}
                                 <div class="row clearfix">
                                     <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                                        <input type="text" name="name" value="" placeholder="Name" required>
+                                        {{form.name}}
                                     </div>
                                     <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                                        <input type="email" name="email" value="" placeholder="Email" required>
+                                        {{form.email}}
                                     </div>
                                     <div class="form-group col-md-12 col-sm-12 co-xs-12">
-                                        <textarea name="message" placeholder="Message"></textarea>
+                                        {{form.message}}
                                     </div>
                                     <div class="form-group col-md-12 col-sm-12 co-xs-12">
                                         <button type="submit" class="theme-btn btn-style-one">Send Message</button>
@@ -69,7 +70,7 @@
         <div class="map-outer">
             <!--Map Canvas-->
             <div class="map-canvas text-center">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9294.670815717558!2d76.0653296560079!3d11.62850335927538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba67344520898f9%3A0x92f73bfed6bfdb8!2sMunderi%2C%20Kalpetta%2C%20Kerala!5e0!3m2!1sen!2sin!4v1641715209947!5m2!1sen!2sin" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13144.573306481278!2d76.07214824043707!3d11.630117659791573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6735c3094b665%3A0x55c893b0cda2aaf9!2sManiyankode%2C%20Munderi%2C%20Kalpetta%2C%20Kerala!5e0!3m2!1sen!2sin!4v1642133577006!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>

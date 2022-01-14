@@ -11,6 +11,7 @@
     <link href="{% static 'plugins/revolution/css/navigation.css' %}" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <link href="{% static 'css/sweetalert.css' %}" rel="stylesheet" type="text/css" />
 
     <!--Color Switcher Mockup-->
     <link href="{% static 'css/color-switcher-design.css' %}" rel="stylesheet">
@@ -31,13 +32,13 @@
 <body>
 
 <div class="page-wrapper">
-    
+
     <!-- Preloader -->
     <div class="preloader"></div>
-    
+
     <!-- Main Header-->
     <header class="main-header style-v1">
-        
+
         <!--Header Top-->
         <div class="header-top">
             <div class="outer-container">
@@ -63,7 +64,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Main Box -->
         <div class="main-box">
             <div class="outer-container clearfix">
@@ -71,40 +72,40 @@
                 <div class="top-logo logo-box">
                     <div class="logo"><a href="{% url 'web:index' %}"><img src="{% static 'images/new-logo.png' %}" alt=""></a></div>
                 </div>
-                
+
                 <!--Nav Outer-->
                 <div class="nav-outer clearfix">
                     <!-- Main Menu -->
                     <nav class="main-menu">
                         <div class="navbar-header">
-                            <!-- Toggle Button -->      
+                            <!-- Toggle Button -->
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
                         </div>
-                        
+
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                
-                                <li class="{{about}}"><a href="{% url 'web:about' %}">About</a></li>                                   
-                               
-                                
+
+                                <li class="{{about}}"><a href="{% url 'web:index' %}">About</a></li>
+
+
                                 <li class="{{gallery}}"><a href="{% url 'web:gallery' %}">Gallery</a></li>
-                                    
-                              
+
+
                                 <li class="{{wayanad}}"><a href="{% url 'web:about_wayanad' %}">About Wayanad</a></li>
                                 <li class="{{contact}}"><a href="{% url 'web:contact' %}">Contact us</a></li>
                              </ul>
                         </div>
                     </nav>
                     <!-- Main Menu End-->
-                    
+
                     <!--Options Box-->
                     <div class="options-box">
                         <ul class="options-nav">
-                            
+
                             <!--Search Box-->
                             <li class="search-box-outer">
                                 <div class="dropdown">
@@ -126,72 +127,72 @@
                             <li class="menu-btn hidden-bar-opener"><span class="flaticon-menu-button-of-three-lines"></span></li>
                         </ul>
                     </div>
-                    
+
                 </div>
                 <!--Nav Outer End-->
-                
+
             </div>
         </div>
-    
+
         <!--Sticky Header-->
         <div class="sticky-header">
             <div class="auto-container">
-                
+
                 <div class="outer-container clearfix">
                     <!--Logo Box-->
                     <div class="logo-box pull-left">
                         <div class="logo"><a href="index.html"><img src="{% static 'images/moon-logo.jpeg' %}" alt=""></a></div>
                     </div>
-                    
+
                     <!--Nav Outer-->
                     <div class="nav-outer clearfix nav-align">
                         <!-- Main Menu -->
                         <nav class="main-menu">
                             <div class="navbar-header">
-                                <!-- Toggle Button -->      
+                                <!-- Toggle Button -->
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
                             </div>
-                            
+
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
-                                    
-                                    <li class="{{about}}"><a href="{% url 'web:index' %}">About</a></li>     
+
+                                    <li class="{{about}}"><a href="{% url 'web:index' %}">About</a></li>
                                     <li class="{{gallery}}"><a href="{% url 'web:gallery' %}">Gallery</a></li>
-                                        
-                                  
+
+
                                     <li class="{{wayanad}}"><a href="{% url 'web:about_wayanad' %}">About Wayanad</a></li>
                                     <li class="{{contact}}"><a href="{% url 'web:contact' %}">Contact us</a></li>
                                  </ul>
                             </div>
                         </nav>
                         <!-- Main Menu End-->
-                        
+
                     </div>
                     <!--Nav Outer End-->
-                    
+
                 </div>
-                
+
             </div>
         </div>
         <!--End Sticky Header-->
-    
+
     </header>
     <!--End Main Header -->
-    
+
     <!-- Hidden Navigation Bar -->
     <section class="hidden-bar right-align">
-        
+
         <div class="hidden-bar-closer">
             <button><span class="flaticon-cancel-1"></span></button>
         </div>
-        
+
         <!-- Hidden Bar Wrapper -->
         <div class="hidden-bar-wrapper">
-            
+
             <div class="logo">
                 <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="" /></a>
             </div>
@@ -211,20 +212,20 @@
                 </ul>
             </div>
         </div><!-- / Hidden Bar Wrapper -->
-        
+
     </section>
     <!-- End / Hidden Bar -->
     <!--Main Slider-->
     <section class="main-slider">
-    	
+
         <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                 <ul>
-                
-                	<li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/moonvillas/1.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/moonvillas/2.jpg' %}"> 
-                    
-                    <div class="tp-caption tp-resizeme" 
+
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/moonvillas/1.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/moonvillas/2.jpg' %}">
+
+                    <div class="tp-caption tp-resizeme"
                     data-paddingbottom="[0,0,0,0]"
                     data-paddingleft="[0,0,0,0]"
                     data-paddingright="[0,0,0,0]"
@@ -240,15 +241,15 @@
                     data-y="['middle','middle','middle','middle']"
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                    	
+
                     </div>
-                    
+
                     </li>
-                    
+
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/moonvillas/3.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/moonvillas/4.jpg' %}"> 
-                    
-                    <div class="tp-caption tp-resizeme" 
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/moonvillas/4.jpg' %}">
+
+                    <div class="tp-caption tp-resizeme"
                     data-paddingbottom="[0,0,0,0]"
                     data-paddingleft="[0,0,0,0]"
                     data-paddingright="[0,0,0,0]"
@@ -264,15 +265,15 @@
                     data-y="['middle','middle','middle','middle']"
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                    	
+
                     </div>
-                    
+
                     </li>
-                    
+
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/moonvillas/5.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/moonvillas/6.jpg' %}"> 
-                    
-                    <div class="tp-caption tp-resizeme" 
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/moonvillas/6.jpg' %}">
+
+                    <div class="tp-caption tp-resizeme"
                     data-paddingbottom="[0,0,0,0]"
                     data-paddingleft="[0,0,0,0]"
                     data-paddingright="[0,0,0,0]"
@@ -288,28 +289,28 @@
                     data-y="['middle','middle','middle','middle']"
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                    	
+
                     </div>
-                    
+
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
     </section>
-    <!--End Main Slider-->    
+    <!--End Main Slider-->
     <!--  -->
-  
-    
+
+
     <!--About Section Two-->
     <section class="about-section-two">
-    	<div class="auto-container">
-        	<div class="row clearfix">
-            	
+        <div class="auto-container">
+            <div class="row clearfix">
+
                 <!--Content Column-->
                 <div class="content-column col-md-6 col-sm-12 col-xs-12">
-                	<div class="inner-column">
-                    	<h2>About Moon Villas</h2>
+                    <div class="inner-column">
+                        <h2>About Moon Villas</h2>
                         <div class="text">Moon Villas are budget friendly villas made affordable to people
                         for a better lifestyle at the heart and soul of Wayanad, Kalpetta.
                         This exclusive project is proudly presented by Moon Developers
@@ -317,14 +318,14 @@
                         Stylex Doors with a revolutionary thought of upgrading the life
                         style and living perspectives of people with budget friendly villas
                         without any compromise in quality of living as a social
-                        responsibility and commitment towards the society.</div>                    
-                       
+                        responsibility and commitment towards the society.</div>
+
                     </div>
                 </div>
-                
-               
+
+
                 <div class="video-column col-md-6 col-sm-12 col-xs-12">
-                	<div class="inner-column">
+                    <div class="inner-column">
                         <!--Video Box-->
                         <div class="video-box wow fadeInRight">
                             <figure class="image">
@@ -334,115 +335,92 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
     <!--End About Section Two-->
-    
+
     <!--Services Section-->
     <section class="services-section">
-    	<div class="auto-container">
-        	<div class="row clearfix">
-            	
+        <div class="auto-container">
+            <div class="row clearfix">
+
                 <!--Services Block-->
                 <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box wow fadeInDown">
-                    	<div class="icon-box">
-                        	<span class="icon flaticon-house-2"></span>
+                    <div class="inner-box wow fadeInDown">
+                        <div class="icon-box">
+                            <span class="icon flaticon-house-2"></span>
                         </div>
                         <h3><a href="agents-single.html">Budget friendly villas</a></h3>
-                        
+
                     </div>
                 </div>
-                
+
                 <!--Services Block-->
                 <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box wow fadeInUp">
-                    	<div class="icon-box">
-                        	<span class="icon flaticon-nature"></span>
+                    <div class="inner-box wow fadeInUp">
+                        <div class="icon-box">
+                            <span class="icon flaticon-nature"></span>
                         </div>
-                        <h3><a href="agents-single.html">Wildlife and Plantations</a></h3>                     
+                        <h3><a href="agents-single.html">Wildlife and Plantations</a></h3>
                     </div>
                 </div>
-                
+
                 <!--Services Block-->
                 <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box wow fadeInDown">
-                    	<div class="icon-box">
-                        	<span class="icon flaticon-location-pin"></span>
+                    <div class="inner-box wow fadeInDown">
+                        <div class="icon-box">
+                            <span class="icon flaticon-location-pin"></span>
                         </div>
-                        <h3><a href="agents-single.html">Prime Location</a></h3>                        
+                        <h3><a href="agents-single.html">Prime Location</a></h3>
                     </div>
                 </div>
-                
+
                 <!--Services Block-->
                 <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box wow fadeInUp">
-                    	<div class="icon-box">
-                        	<span class="icon flaticon-users"></span>
+                    <div class="inner-box wow fadeInUp">
+                        <div class="icon-box">
+                            <span class="icon flaticon-users"></span>
                         </div>
-                        <h3><a href="agents-single.html">Family Ambience</a></h3>                        
+                        <h3><a href="agents-single.html">Family Ambience</a></h3>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
     <!--End Services Section-->
-    
+
     <!--Convenience Section-->
     <section class="convenience-section" style="background-image:url({% static 'images/moonvillas/9.jpg' %})">
-    	<div class="auto-container">
-        	<h2>Villas & Specs</h2>
+        <div class="auto-container">
+            <h2>Villas & Specs</h2>
             <div class="outer-container clearfix">
-            	<!--Content Column-->
+                <!--Content Column-->
                 <div class="content-column">
-                	<!--Convenience Info Tabs-->
+                    <!--Convenience Info Tabs-->
                     <div class="convenience-info-tabs">
                         <!--Product Tabs-->
                         <div class="convenience-tabs tabs-box">
-                        
+
                             <!--Tab Btns-->
                             <ul class="tab-btns tab-buttons clearfix">
                                 <li data-tab="#tab-details" id="nav-1" class="nav-item tab-btn active-btn" >2 BHK Villa</li>
                                 <li data-tab="#tab-interior" id="nav-2" class="nav-item tab-btn" >3 BHK Villa</li>
                             </ul>
-                            
+
                             <!--Tabs Container-->
                             <div class="tabs-content">
-                                
+
                                 <!--Tab / Active Tab-->
                                 <div class="tab active-tab" id="tab-details"
 >                                    <div class="content">
-                                        <h3>2 BHK Villa Details</h3> 
-                                        <h4 style="font-weight: bold;"">Ground Floor</h4>                                     
+                                        <h3>2 BHK Villa Details</h3>
+                                        <h4 style="font-weight: bold;">Ground Floor</h4>
                                         <div class="row clearfix">
 
-                                        	<ul class="list-style-three col-md-6 col-sm-6 col-xs-12">
-                                            	<li>Sit Out</li>
-                                                <li>Living Area</li>
-                                                <li>Dining Area</li>
-                                                <li>Court Yard</li>
-                                                <li>M.Kitchen</li>
-                                                <li>2 Bedrooms</li>
-                                                <li>2 Toilets</li>
-                                            </ul>
                                             <ul class="list-style-three col-md-6 col-sm-6 col-xs-12">
-                                            	
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                
-                                <!--Tab-->
-                                <div class="tab" id="tab-interior">
-                                    <div class="content">
-                                        <h3>3 BHK Villa Details</h3>
-                                        <h4 style="font-weight: bold;">Ground Floor</h4>                                        
-                                        <div class="row clearfix">
-                                        	<ul class="list-style-three col-md-6 col-sm-6 col-xs-12">
                                                 <li>Sit Out</li>
                                                 <li>Living Area</li>
                                                 <li>Dining Area</li>
@@ -451,49 +429,74 @@
                                                 <li>2 Bedrooms</li>
                                                 <li>2 Toilets</li>
                                             </ul>
-                                            
+                                            <ul class="list-style-three col-md-6 col-sm-6 col-xs-12">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!--Tab-->
+                                <div class="tab" id="tab-interior">
+                                    <div class="content">
+                                        <h3>3 BHK Villa Details</h3>
+                                        <h4 style="font-weight: bold;">Ground Floor</h4>
+                                        <div class="row clearfix">
+                                            <ul class="list-style-three col-md-6 col-sm-6 col-xs-12">
+                                                <li>Sit Out</li>
+                                                <li>Living Area</li>
+                                                <li>Dining Area</li>
+                                                <li>Court Yard</li>
+                                                <li>M.Kitchen</li>
+                                                <li>2 Bedrooms</li>
+                                                <li>2 Toilets</li>
+                                            </ul>
+
                                             <ul class="list-style-three col-md-6 col-sm-6 col-xs-12">
                                                 <h4 style="font-weight: bold;">First Floor</h4>
                                                    <li>Bedroom</li>
-                                                <li>Toilet</li>                	
-                                                
-                                                
-                                                
+                                                <li>Toilet</li>
+
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
-        			<!--End Product Info Tabs-->
+                    <!--End Product Info Tabs-->
                 </div>
                 <!--Image Column-->
                 <div class="image-column" id="BgImageTwo" style="background-image:url({% static 'images/moonvillas/26.jpeg' %})">
-                	
+
                 </div>
+                
                 <div class="image-column" id="BgImageOne" style="background-image:url({% static 'images/moonvillas/22.jpeg' %})">
-                    
+
                 </div>
+               
             </div>
         </div>
     </section>
     <!--End Convenience Section-->
- 
-   
-    
+
+
+
     <!--Plans Section-->
     <section class="plans-section">
-    	<div class="auto-container">
-        	<div class="plans-tab tabs-box">
+        <div class="auto-container">
+            <div class="plans-tab tabs-box">
                 <div class="row clearfix">
-                    
+
                     <!--Tite column-->
                     <div class="title-column col-md-6 col-sm-12 col-xs-12">
                         <div class="inner-column">
                             <h2>Villas Plans</h2>
-                            <div class="text">Retro four loko ethical, distillery lomo meh mixtape vice plaid palo santo live-edge ugh banjo marfa lyft. Pour-over distillery keytar activated charcoal. Snackwave blue bottle bespoke af farm-to-table 3 wolf moon, beard helvetica godard hell of. Schli hot chicken kombucha.</div>
+                            <div class="text">We have the best accessible facilities. We are serviceable to
+everyone in the society in view of the fact of our feasibility,
+availability and quality given equally to all.</div>
                             <!--Tab Btns-->
                             <ul class="tab-btns tab-buttons clearfix">
                                 <li data-tab="#first-floor" class="tab-btn active-btn">2 BHK Plan</li>
@@ -501,66 +504,70 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <!--Image column-->
                     <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                    	<!--Tabs Container-->
+                        <!--Tabs Container-->
                         <div class="tabs-content">
-                            
+
                             <!--Tab / Active Tab-->
                             <div class="tab active-tab" id="first-floor">
                                 <div class="content">
-                                	<div class="image cover-image">
+                                    <div class="image cover-image">
                                         <img src="{% static 'images/villa2.jpg' %}" alt="" />
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!--Tab-->
                             <div class="tab" id="second-floor">
                                 <div class="content">
-                                	<div class="image">
+                                    <div class="image">
                                         <img src="{% static 'images/villa3.jpg' %}" alt="" />
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </section>
     <!--End Plans Section-->
-    
+
     <!--Fluid Section Two-->
     <section class="fluid-section-two">
-    	<div class="outer-container clearfix">
-        	<!--Image Column-->
+        <div class="outer-container clearfix">
+            <!--Image Column-->
             <div class="map-column">
-            	<!--Map Canvas-->
+                <!--Map Canvas-->
                 <div class="map-canvas">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9294.670815717558!2d76.0653296560079!3d11.62850335927538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba67344520898f9%3A0x92f73bfed6bfdb8!2sMunderi%2C%20Kalpetta%2C%20Kerala!5e0!3m2!1sen!2sin!4v1641715209947!5m2!1sen!2sin" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13144.573306481278!2d76.07214824043707!3d11.630117659791573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6735c3094b665%3A0x55c893b0cda2aaf9!2sManiyankode%2C%20Munderi%2C%20Kalpetta%2C%20Kerala!5e0!3m2!1sen!2sin!4v1642133577006!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-        	<!--Content Column-->
+            <!--Content Column-->
             <div class="content-column">
-            	<div class="inner-box">
-					<h2>Distance From Important Places</h2>
-                    <div class="text">Mumblecore pabst gochujang yuccie fingerstache, before they sold out cred mlkshk poutine af squid. Edison bulb cronut air plant pickled four loko vinyl. Tilde franzen sartorial, williamsburg vape keffiyeh man bun retro butcher. </div>
+                <div class="inner-box">
+                    <h2>Distance From Important Places</h2>
+                    <div class="text">Kalpetta town is a stone’s throw away from our villas where
+everything for your needs are available. Health centres,
+educational centres, malls and supermarkets. Kalpetta is also an
+upcoming developing town where many new expansions are
+coming up.</div>
                     <div class="row clearfix">
-                    	<div class="column col-md-6 col-sm-6 col-xs-12">
-                        	<ul class="list-style-four">
-                            	<li><span class="icon flaticon-transport"></span>Calicut Airport <strong>80Km</strong></li>
+                        <div class="column col-md-6 col-sm-6 col-xs-12">
+                            <ul class="list-style-four">
+                                <li><span class="icon flaticon-transport"></span>Calicut Airport <strong>80Km</strong></li>
                                 <li><span class="icon flaticon-transport"></span>Kannur Airport <strong>105.5Km</strong></li>
-                                <li><span class="icon flaticon-resort"></span>Kalpetta Town <strong>0.2Km</strong></li>
+                                <li><span class="icon flaticon-resort"></span>Kalpetta Town <strong>4.5Km</strong></li>
                             </ul>
                         </div>
                         <div class="column col-md-6 col-sm-6 col-xs-12">
-                        	<ul class="list-style-four">
-                            	<li><span class="icon flaticon-resort"></span>Ootty <strong>115km</strong></li>
+                            <ul class="list-style-four">
+                                <li><span class="icon flaticon-resort"></span>Ootty <strong>115km</strong></li>
                                 <li><span class="icon flaticon-resort"></span>Mysore <strong>135km</strong></li>
                                 <li><span class="icon flaticon-boat"></span>Pookkode Lake <strong>19km</strong></li>
                             </ul>
@@ -571,44 +578,44 @@
         </div>
     </section>
     <!--End Fluid Section Two-->
-    
-    
-    
+
+
+
     <!--Call To Action Section-->
     <section class="call-to-action-section">
-    	<div class="auto-container">
-        	<div id="subscribe"class="row clearfix">
-            	<!--Logo Column-->
+        <div class="auto-container">
+            <div id="subscribe"class="row clearfix">
+                <!--Logo Column-->
                 <div class="logo-column col-md-3 col-sm-12 col-xs-12" >
-                	<div class="logo">
-                    	<img src="{% static 'images/moon-logo.jpeg' %}" alt="" />
+                    <div class="logo">
+                        <img src="{% static 'images/moon-logo.jpeg' %}" alt="" />
                     </div>
                 </div>
                 <!--Text Column-->
                 <div class="text-column col-md-6 col-sm-12 col-xs-12">
-                	<div class="text">Fusce pulvinar dolor vitae auctor malesuada. Maecenas tristique eros in turpis molestie ornare. Nullam iaculis ligula eget dolor ultricies, vel iaculis tortor porttitor. Ut at nisi mauris.</div>
+                    <div class="text">Moon Villas are budget friendly villas made affordable to people for a better lifestyle at the heart and soul of Wayanad, Kalpetta. This exclusive project is proudly presented by Moon Developers in collaboration with Jay n Jay Hoarding Company pvt ltd and Stylex Doors with a revolutionary thought of upgrading the life style and living perspectives of people with budget friendly villas without any compromise in quality of living as a social responsibility and commitment towards the society.</div>
                 </div>
                 <!--Btn Column-->
                 <div class="btn-column col-md-3 col-sm-12 col-xs-12">
-                	<a href="{% url 'web:contact' %}" class="theme-btn btn-style-four">Contact Us</a>
+                    <a href="{% url 'web:contact' %}" class="theme-btn btn-style-four">Contact Us</a>
                 </div>
             </div>
         </div>
     </section>
     <!--End Call To Action Section-->
-    
+
     <!--Main Footer-->
-    <footer class="main-footer">   	
-         
-    	<!--Footer Bottom-->
+    <footer class="main-footer">
+
+        <!--Footer Bottom-->
         <div class="footer-bottom">
-        	<div class="row clearfix">                
-            	<div class="column col-md-4 col-sm-12 col-xs-12">                    
-                	<div class="copyright">Powered by | <a target="_blank" href="https://www.prospello.in/">Prospello</a> Global</div>
+            <div class="row clearfix">
+                <div class="column col-md-4 col-sm-12 col-xs-12">
+                    <div class="copyright">Powered by | <a target="_blank" href="https://www.prospello.in/">Prospello</a> Tech</div>
                 </div>
                 <div class="nav-column col-md-6 col-sm-12 col-xs-12">
-                	<ul class="footer-nav">
-                    	<li><a href="{% url 'web:index' %}">About</a></li>                        
+                    <ul class="footer-nav">
+                        <li><a href="{% url 'web:index' %}">About</a></li>
                         <li><a href="{% url 'web:gallery' %}">Gallery</a></li>
                         <li><a href="{% url 'web:about_wayanad' %}">Blog</a></li>
                         <li><a href="{% url 'web:contact' %}">Contact</a></li>
@@ -617,7 +624,7 @@
             </div>
         </div>
     </footer>
-    
+
 </div>
 <!--End pagewrapper-->
 
@@ -626,7 +633,7 @@
 
 
 
-<script src="{% static 'js/jquery.js' %}"></script> 
+<script src="{% static 'js/jquery.js' %}"></script>
 <!--Revolution Slider-->
 <script src="{% static 'plugins/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
 <script src="{% static 'plugins/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
@@ -649,9 +656,10 @@
 <script src="{% static 'js/wow.js' %}"></script>
 <script src="{% static 'js/jquery.timepicker.min.js' %}"></script>
 <script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/sweetalert.min.js' %}"></script>
 <script src="{% static 'js/script.js' %}"></script>
 
-<a  class="whats-app" href="https://api.whatsapp.com/send?phone=918593981779?text=I'm%20interested%20in%20your%20Moon%20Villas%20Project." target="_blank">
+<a  class="whats-app" href="https://api.whatsapp.com/send?phone=918845252727&text=I'm%20interested%20in%20your%20Moon%20Villas%20Project." target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
 </a>
 </body>

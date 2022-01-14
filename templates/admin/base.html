@@ -1,0 +1,16 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+{% block extrahead %}
+        <link rel="icon" href="{% static 'web/images/favicon.ico' %}" sizes="48x48" />
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}
+<style>
+:root {
+  --primary: #21ba8a;
+  --secondary: #528f7c;
+  --link-fg: #05563d;
+  --link-selected-fg: #073e2d;
+}
+</style>
+{% endblock %}
