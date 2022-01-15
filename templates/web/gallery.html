@@ -40,24 +40,28 @@
                 </div>
                 
                 <div class="filter-list row clearfix">
-                    {% for gallery_data in all_gallery_images %}
+                    {% for gallery_data in gallery_datas %}
+                    {% for image_data in gallery_data.gallery.all %}
                     
                     <!--Gallery Block Five-->
                     <div class="gallery-block-five col-md-4 col-sm-6 col-xs-12 mix all {% if gallery_data.category == 'bedroom' %}bedroom{% elif gallery_data.category == 'drawing' %}drawing{% elif gallery_data.category == 'living' %}living{% elif gallery_data.category == 'kitchen' %}kitchen{% elif gallery_data.category == 'garage' %}garage{% elif gallery_data.category == 'basement' %}basement{% endif %}">
+                        
                         <div class="inner-box">
                             <figure class="image-box">
-                                <img src="{{gallery_data.image.url}}" alt="">
+                                <img src="{{image_data.image.url}}" alt="">
                                 <!--Overlay Box-->
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <div class="content">
-                                            <a href="{{gallery_data.image.url}}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
+                                            <a href="{{image_data.image.url}}" data-fancybox="images" data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </div>
+                        
                     </div>
+                    {% endfor %}
                     {% endfor %}
                 </div>
             </div>

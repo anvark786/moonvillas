@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http.response import HttpResponse,HttpResponseRedirect
-from . models import Gallery
+from . models import Gallery,ImageUpload
 from .forms import ContactForm
 from .functions import generate_form_errors
 import json 
@@ -16,11 +16,11 @@ def index(request):
 
 
 def gallery(request):
-	all_gallery_images = Gallery.objects.all()
+	gallery_datas = Gallery.objects.all()
 	context = {
 		'title': "Gallery",
 		"gallery": "current",
-		"all_gallery_images":all_gallery_images,
+		"gallery_datas": gallery_datas,
 
 	}
 	return render(request,'web/gallery.html',context)

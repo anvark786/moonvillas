@@ -10,13 +10,17 @@ class ContactForm(forms.ModelForm):
 		fields = '__all__'
 		widgets = {
 			'name': TextInput(attrs={'class': 'required form-control','placeholder': 'Name'}),
-			'email': TextInput(attrs={'class': 'required form-control','placeholder': 'Email'}),	
+			'email': TextInput(attrs={'class': 'required form-control','placeholder': 'Email'}),
+			'phone': TextInput(attrs={'class': 'required form-control','placeholder': 'Phone'}),	
 			'message': Textarea(attrs={'class': 'required form-control','placeholder': 'Message'}),	
 
 		}
 		error_messages = {
 			'name': {
 				'required': _("Name field is required."),
+			},
+			'email': {
+				'required': _("Phone field is required."),
 			},
 			'email': {
 				'required': _("Phone field is required."),
